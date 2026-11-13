@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>07 Card Hover Glow</title>
+  <title>Portfolio Ashley</title>
   <style>
+	@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+	* {font-family:Mouse Memoirs;}
+		.headerfin {font-family:Style Script;}
+		
     * {
       box-sizing: border-box;
       margin: 0;
@@ -12,8 +17,7 @@
     }
 
     body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background-color: #f8fafc;
+      background-color: #F8B2B2;
       color: #334155;
       min-height: 100vh;
       display: flex;
@@ -25,7 +29,7 @@
       top: 0;
       z-index: 100;
       background-color: #3E0F8D;
-      color: #EEEEEE;
+      color: #E5D9F2;
       padding: 16px 24px;
       text-align: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -51,6 +55,7 @@
     .flex-container {
       display: flex;
       flex-wrap: wrap;
+	  align-items: flex-start;
       gap: 20px;
       justify-content: center;
       max-width: 1200px;
@@ -59,7 +64,7 @@
 
     .card {
       flex: 0 1 260px;
-      background-color: #ffffff;
+      background-color: #F5EFFF;
       border: 1px solid #e2e8f0;
       border-radius: 8px;
       overflow: hidden;
@@ -70,14 +75,15 @@
     }
 
     .card:hover {
-      transform: translateY(-4px) scale(1.03);
+      transform: translateY(-4px) scale(1.08);
+	  rotate: 3deg ;
       border-color: rgba(156, 39, 176, 0.4);
       box-shadow: 0 10px 24px rgba(128, 0, 128, 0.18), 0 0 14px rgba(251, 146, 60, 0.28);
     }
 
     .card img {
       width: 100%;
-      height: 180px;
+      height: auto;
       object-fit: cover;
       display: block;
     }
@@ -93,31 +99,96 @@
 <body>
 
   <header>
-    <h1>Portfolio Karya DKV Ashley</h1>
+    <h1 class="headerfin">Portfolio Karya DKV Ashley</h1>
   </header>
 
   <main>
     <div class="flex-container">
       <div class="card">
-        <img src="cerita1.jpg" alt="Bermain violin bersama lawanmu">
-        <p>Ilustrasi digital seseorang bermain violin bersama lawannya yang menatap sinis menggunakan IbispaintX. Proses pembuatan selama 15 jam dengan teknik render campuran cell shading</p>
+        <img src="images/cerita1.jpg" alt="Dirimu yang lebih sempurna">
+        <p>Ilustrasi digital "The Stranger" bermain violin dengan sempurna, sementara Gordey hanya bisa menatap dengan penuh iri. Ilustrasi menggunakan IbispaintX. Proses pembuatan selama 15 jam dengan teknik render campuran cell shading.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/cerita2.jpg" alt="Perjanjian antara yang hidup dan mati">
+        <p>Ilustrasi digital Dragan yang menyegel perjanjian antara kehidupan dan kematian bersama dengan nenek tua, yang hanya menginginkan kedamaian dalam hatinya. Ilustrasi menggunakan IbispaintX. Proses pembuatan selama 10 jam dengan teknik render campuran cell shading.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/cerita3.jpg" alt="Cara menolak cinta yang halus">
+        <p>Ilustrasi digital Veselina yang hanya bisa mengomel saat Sasha membuatkan bouquet bunga untuk Veselina yang ingin putus dengan pacarnya. Ilustrasi menggunakan IbispaintX. Proses pembuatan selama 4 jam dengan teknik render campuran cell shading.</p>
       </div>
 
       <div class="card">
-        <img src="cerita4.jpg" alt="Kejahatan kapitalis">
-        <p>Ilustrasi digital Kekejaman kapitalis yang dilakukan seorang banker kejam menggunakan IbisPaintX. Proses pembuatan selama 9 jam dengan teknik render campuran cell shading</p>
+        <img src="images/cerita4.jpg" alt="Kejahatan kapitalis">
+        <p>Ilustrasi digital kekejaman kapitalis yang dilakukan Fedya, tak memerdulikan kesejahteraan rakyat Volovny. Ilustrasi menggunakan IbisPaintX. Proses pembuatan selama 9 jam dengan teknik render campuran cell shading.</p>
       </div>
 
+	  <div class="card">
+        <img src="images/studi.jpg" alt="The Hanged Man">
+        <p>Ilustrasi digital menggambarkan salah satu kartu tarot ke-12 "The Hanged Man". Kartu tarot menggunakan karakter Jayce Talis dari serial animasi Arcane, khususnya pada Season 2. Ilustrasi menggunakan IbisPaintX. Adapun teknik render yang digunakan meniru cara rendering Arcane yang condong seperti lukisan kasar dengan warna campuran yang indah.</p>
+      </div>
+	  
       <div class="card">
-        <img src="cerita5.jpg" alt="Waktu yang tidak bisa dihentikan">
-        <p>Ilustrasi digital Kesempatan terakhir sepasang kekasih yang terkejar waktu menggunakan IbisPaintX. Proses pembuatan selama 4 jam dengan teknik render campuran cell shading</p>
+        <img src="images/cerita5.jpg" alt="Waktu yang tidak bisa dihentikan">
+        <p>Ilustrasi digital kesempatan terakhir Konstantin dan Katarina yang terjebak dalam loop waktu yang menghantui mereka selalu. Ilustrasi menggunakan IbisPaintX. Proses pembuatan selama 4 jam dengan teknik render campuran cell shading.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/nirmana2.jpg" alt="Nirmana garis">
+        <p>Gambar tradisional berupa nirmana garis 2D. Nirmana sendiri tidak memiliki makna, namun disusun sedemikian rupa sehingga memiliki nilai keindahan yang harmonis. Garis nirmana dibuat dengan cat akrilik hitam AGA. </p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/nirmana3.jpg" alt="Nirmana 3D">
+        <p>Karya nirmana 3D yang disusun dengan cara membuat rangkaian banyak tusuk sate di atas balok gabus sebesar 30 cm x 30 cm, dengan ketinggian serta warna tusuk sate yang berbeda-beda. Disusun supaya membentuk nirmana dengan pola yang indah untuk dilihat dari berbagai arah. </p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/poster.jpg" alt="Poster GDGoC">
+        <p>Poster digital GDGoC yang mengangkat event "Building the Leaders of Tommorow". Poster menggunakan skema warna GDGoC merah-kuning-biru-hijau (warna Google) dan dibuat menggunakan Canva.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/twibbon.jpg" alt="Twibbon GDGoC">
+        <p>Template twibbon digital yang bisa digunakan yang mengangkat event "Building the Leaders of Tommorow". Twibbon menggunakan skema warna GDGoC merah-kuning-biru-hijau (warna Google) dan dibuat menggunakan Canva.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/texture.jpg" alt="Texture">
+        <p>Karya berukuran kertas gambar yang memanfaatkan berbagai macam texture alami maupun buatan yang disusun untuk menjadi kesatuan karya. Adapun texture yang digunakan adalah texture daun, kapas, tali goni, tusuk sate, kertas origami, kertas buffalo hitam, plastik yang diwarnai menyerupai stained glass, cat akrilik, serta spidol pink-ungu.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/warna.jpg" alt="Warna">
+        <p>Karya datar yang disusun dengan menggunakan beberapa bangun geometri dasar dan non-geometri, yang kemudian diberi warna merah-kuning-biru. Bentuk bisa ditumpuk dan dikomposisikan agar membentuk karya yang seimbang.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/cover.jpg" alt="Cover majalah">
+        <p>Cover majalah fiktif digital menggunakan penampilan majalah "Vogue" dengan karakter game Genshin Impact "Pantalone" sebagai wajah utama dengan skema warna dominan ungu. Cover dibuat menggunakan Adobe Illustrator.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/novel.jpg" alt="Cover Elizabeth is Missing">
+        <p>Alternatif cover buku novel "Elizabeth is Missing" karangan Emma Healey menggunakan permainan tipografi dan sedikit ilustrasi untuk menggambarkan keseluruhan isi cerita novel. Cover buku dibuat menggunakan IbisPaintX.</p>
+      </div>
+	  
+	  <div class="card">
+        <img src="images/brosur.jpg" alt="Brosur Coca-Cola">
+        <p>Brosur Coca-Cola yang didominasi dengan skema warna merah-putih. Mengankat tema "Mental Health", brosur ini menawarkan berbagai macam layanan untuk pegawainya dalam rangka menjaga kesehatan mental bersama. Brosur dibuat menggunakan Adobe Illustrator. </p>
+      </div>
+
+	  <div class="card">
+        <img src="images/ikon.jpeg" alt="Ikon jaksa">
+        <p>Gambar tradisional untuk menggambarkan profesi jaksa dalam bentuk ikon sederhana. Gambar diwarnai menggunakan cat akrilik. </p>
       </div>
 
     </div>
   </main>
 
   <footer>
-    <p>&copy; Portfolio karya - Ashley 225170706</p>
+    <p>&copy; Portfolio karya DKV - Ashley 225170706</p>
   </footer>
 
 </body>
